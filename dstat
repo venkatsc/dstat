@@ -32,6 +32,7 @@ import sched
 import six
 import sys
 import time
+import types
 
 VERSION = '0.8.0'
 
@@ -2689,6 +2690,9 @@ def main():
     if op.update:
         sys.stdout.write('\n')
 
+rows = 0
+cols = 0
+showheader = False
 def perform(update):
         "Inner loop that calculates counters and constructs output"
         global totlist, oldvislist, vislist, showheader, rows, cols
