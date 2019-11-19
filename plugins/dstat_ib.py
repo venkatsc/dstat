@@ -11,7 +11,7 @@ class dstat_plugin(dstat):
         dstat --ib -N total
 
         example for Mellanox adapter, transfering data via port 2
-        dstat --ib -Nmlx4_0:2
+        dstat --ib -Nmlx4_0:2,total 
     """
 
     def __init__(self):
